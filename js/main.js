@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 function scroll() {
-  const smoothLinks = document.querySelectorAll('.nav-link');
+  const smoothLinks = document.querySelectorAll('.nav__link');
   for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
       e.preventDefault();
