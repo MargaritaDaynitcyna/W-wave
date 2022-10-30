@@ -3822,6 +3822,11 @@ li {
     gap: 23px;
   }
 
+  .form__bottom .just-validate-error-label {
+    top: 56px;
+    left: 0px;
+  }
+
   .checkbox+span {
     top: -3px;
     width: 13px;
