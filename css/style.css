@@ -537,6 +537,7 @@ li {
   bottom: 0;
   background: rgba(128, 128, 128, 0.9);
   z-index: 100;
+  overflow: scroll;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -3197,7 +3198,7 @@ li {
   .menu-open {
     top: 50px;
     padding: 61px 32px 24px 32px;
-    height: calc(100vh - 68vh);
+    height: calc(100vh - 66vh);
   }
 
   .menu-open .nav__list {

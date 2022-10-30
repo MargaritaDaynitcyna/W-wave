@@ -94,7 +94,7 @@ function showGuestInfo() {
           link.classList.remove('link-disabled')
         })
 
-        document.querySelector('.guest__img').style.backgroundImage = `url('../img/${item.dataset.img}')`
+        document.querySelector('.guest__img').style.backgroundImage = `url('./img/${item.dataset.img}')`
         document.querySelector('.guest__name').textContent = item.innerText
         document.querySelector('.guest__description').textContent = item.dataset.descr
 
