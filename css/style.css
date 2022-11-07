@@ -1424,7 +1424,8 @@ li {
   color: var(--text_grey);
 }
 
-.link-disabled {
+.social__link_disabled,
+.guest__link_disabled {
   pointer-events: none;
   cursor: default;
   color: #888;
@@ -2680,7 +2681,7 @@ li {
     display: none;
   }
 
-  .menu-open {
+  .nav_opened {
     position: absolute;
     top: 60px;
     left: 0;
@@ -2692,7 +2693,7 @@ li {
     z-index: 4;
   }
 
-  .menu-open .nav__list {
+  .nav_opened .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2706,15 +2707,15 @@ li {
     height: 188px;
   }
 
-  .menu-open .nav__item {
+  .nav_opened .nav__item {
     margin-bottom: 64px;
   }
 
-  .menu-open .nav__item:nth-child(3n) {
+  .nav_opened .nav__item:nth-child(3n) {
     margin-bottom: 0;
   }
 
-  .menu-open .nav__background {
+  .nav_opened .nav__background {
     position: absolute;
     top: 0;
     left: 47%;
@@ -3037,6 +3038,7 @@ li {
   .modal__container {
     margin-right: 32px;
     margin-left: 32px;
+    margin-bottom: 32px;
   }
 
   .container {
@@ -3049,7 +3051,7 @@ li {
     padding-bottom: 54px;
   }
 
-  .menu-open .nav__background {
+  .nav_opened .nav__background {
     display: none;
   }
 
@@ -3198,13 +3200,13 @@ li {
     height: 50px;
   }
 
-  .menu-open {
+  .nav_opened {
     top: 50px;
     padding: 61px 32px 24px 32px;
     height: calc(100vh - 66vh);
   }
 
-  .menu-open .nav__list {
+  .nav_opened .nav__list {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
@@ -3213,7 +3215,7 @@ li {
     font-size: 20px;
   }
 
-  .menu-open .nav__item {
+  .nav_opened .nav__item {
     margin-bottom: 40px;
   }
 
@@ -3231,7 +3233,7 @@ li {
     display: none;
   }
 
-  .topics.topics-open {
+  .topics.topics_opened {
     position: absolute;
     top: calc(calc(100vh - 68vh) - 50px);
     left: 0;
@@ -3313,11 +3315,11 @@ li {
     transition: 0.3s;
   }
 
-  .air-opened .air__open-btn {
+  .air__open_opened .air__open-btn {
     background-color: var(--bc-grey);
   }
 
-  .air-opened .air__open-icon {
+  .air__open_opened .air__open-icon {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -3357,7 +3359,7 @@ li {
     transition: 0.5s;
   }
 
-  .air__player.is-show {
+  .air__player_shown {
     opacity: 1;
   }
 
