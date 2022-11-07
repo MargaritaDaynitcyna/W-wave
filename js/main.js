@@ -162,11 +162,11 @@ function validateForm() {
   });
 
   validate
-    .addField('.input__massage', [{
+    .addField('.input-massage', [{
       rule: 'required',
       errorMessage: 'Напишите сообщение',
     }, ])
-    .addField('.input__name', [{
+    .addField('.input-name', [{
         rule: 'minLength',
         value: 3,
         errorMessage: "Слишком короткое имя"
@@ -181,7 +181,7 @@ function validateForm() {
         errorMessage: 'Введите имя',
       },
     ])
-    .addField('.input__email', [{
+    .addField('.input-email', [{
         rule: 'required',
         errorMessage: 'Введите почту',
       },
@@ -198,7 +198,7 @@ function validateForm() {
   const validateLogin = new window.JustValidate('.modal__form');
 
   validateLogin
-    .addField('.input__login', [{
+    .addField('.input-login', [{
         rule: 'minLength',
         value: 3,
         errorMessage: "Слишком короткий логин"
@@ -213,7 +213,7 @@ function validateForm() {
         errorMessage: 'Введите логин',
       },
     ])
-    .addField('.input__pass', [{
+    .addField('.input-pass', [{
       rule: 'required',
       errorMessage: 'Введите пароль',
     }, {
