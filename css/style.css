@@ -495,7 +495,7 @@ li {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 450px;
+  /* height: 450px; */
   background-image: url('../img/microphone.png');
   background-repeat: no-repeat;
   background-position: right;
@@ -525,6 +525,7 @@ li {
 
 .hero__btn {
   display: inline-block;
+  max-width: 100%;
 }
 
 .modal {
@@ -761,10 +762,14 @@ li {
 
 .podcast__title {
   margin-bottom: 4px;
+  max-height: 20px;
+  overflow: hidden;
 }
 
 .podcast__autor {
+  max-height: 16px;
   color: var(--text_grey);
+  overflow: hidden;
 }
 
 .podcast__action {
@@ -902,7 +907,7 @@ li {
 }
 
 .broadcasts__info {
-  min-width: 255px;
+  width: 255px;
 }
 
 .select__subtitle {
@@ -1115,21 +1120,27 @@ li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 20px 0 19px 15px;
-  height: 112px;
+  min-height: 112px;
   border: 1px solid var(--light_grey);
 }
 
 .card__title {
   margin-bottom: 4px;
+  max-width: 99%;
+  max-height: 40px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__desc {
+  margin-bottom: 19px;
+  max-width: 99%;
+  max-height: 12px;
   color: var(--text_grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__link {
@@ -1728,10 +1739,14 @@ li {
 
 .music-band__name {
   margin-bottom: 4px;
+  max-height: 32px;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .music-band__albums {
+  max-height: 24px;
+  overflow: hidden;
   color: var(--text_grey);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2037,8 +2052,11 @@ li {
 }
 
 .person__description {
+  max-height: 48px;
   line-height: 24px;
   color: var(--text_grey);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .swiper {
@@ -2403,7 +2421,7 @@ li {
   }
 
   .hero__container {
-    height: auto;
+    /* height: auto; */
     background-size: 25%;
     background-position-x: 87%;
     padding-bottom: 90px;
